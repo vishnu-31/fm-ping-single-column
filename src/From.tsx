@@ -23,9 +23,9 @@ export const Form = () => {
 
 
     return (
-        <form className="my-6 flex flex-col justify-center mx-auto md:flex-row w-[80%] max-w-[500px] md:w-[700px]">
-            <span className="mt-3 mb-7 md:items-center">
-                <input className="rounded-full px-8  focus:border-blue-700 h-12 w-full mb-3 border-[1px]"
+        <form className="my-6 flex flex-col justify-center mx-auto md:flex-row  max-w-[500px] md:w-[700px]">
+            <span className="mt-3 mb-7 md:items-center min-w-full">
+                <input className="rounded-full px-8  focus:border-blue-700 h-12 w-full md:w-[400px] mb-3 border-[1px]"
                     type="email" name="mail" id="mail" placeholder="Your email address.."
                     value={mail} onChange={e => setMail(e.target.value)} required formNoValidate />
                 {isInvalid && <div className={`text-xs italic text-red-500`}>{errorMessage}</div>}
@@ -37,11 +37,11 @@ export const Form = () => {
                             bg-blue-500 
                             text-white 
                             rounded-full 
-                            p-3 px-6 
-                            md:mt-3 md:mx-3 
+                            p-3 px-9
+                            md:mt-3 md:mx-0 
                             border-[1px] 
                             hover:bg-blue-400"
-                    type="button">Notify Me</button>
+                    type="button">Notify&nbsp;Me</button>
             </span>
         </form>
     );
