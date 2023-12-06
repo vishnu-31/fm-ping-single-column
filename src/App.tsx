@@ -6,14 +6,14 @@ function App() {
 
 
   return (
-    <main className="flex-col h-[100vh] mx-auto text-center min-w-[350px] w-[90%] md:w-[800px] justify-end pt-[5em]">
-      <div className=" flex items-center mb-8 ">
-        <img className="mx-auto w-16 md:w-24" src="/images/logo.svg" alt="Ping Logo" />
+    <main className="flex-col h-[100vh] mx-auto text-center min-w-[350px] w-[90%] md:w-[800px]  pt-[6em]">
+      <div className=" flex items-center mb-12 ">
+        <img className="mx-auto w-16 md:w-20" src="/images/logo.svg" alt="Ping Logo" />
       </div>
 
       <div>
         <p className="text-xl md:text-5xl my-3 text-gray-400">We are launching <span className=" text-black font-bold">soon!</span></p>
-        <p className="text-sm mb-3 md:text-xl">Subscribe and get notified</p>
+        <p className="text-sm mb-10 md:text-xl">Subscribe and get notified</p>
         <Form/>
       </div>
 
